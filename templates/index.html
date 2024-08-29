@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Names Starting with A</title>
+</head>
+<body>
+    <h1>Names having third letter s</h1>
+    <ul>
+        {% for person in persons %}
+            <li>{{ person.name }}</li>
+        {% empty %}
+            <li>No names found starting with A.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
